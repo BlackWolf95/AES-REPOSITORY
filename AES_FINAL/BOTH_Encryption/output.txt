@@ -1,0 +1,160 @@
+// k  : b6 92 cf b 64 3d bd f1 be 9b c5 0 68 30 b3 fe
+// pt : 89 d8 10 e8 85 5a ce 68 2d 18 43 d8 cb 12 8f e4
+// ct : 69 c4 e0 d8    6a 7b 4 30        d8 cd b7 80        70 b4 c5 5a
+
+0x69,0x6a,0xd8,0x70,
+0xc4,0x7b,0xcd,0xb4,
+0xe0,0x04,0xb7,0xc5,
+0xd8,0x30,0x80,0x5a
+
+0xb6,0x64,0xbe,0x68,
+0x92,0x3d,0x9b,0x30,
+0xcf,0xbd,0xc5,0xb3,
+0x0b,0xf1,0x00,0xfe
+
+
+0x89,0x85,0x2d,0xcb,
+0xd8,0x5a,0x18,0x12,
+0x10,0xce,0x43,0x8f,
+0xe8,0x68,0xd8,0xe4
+
+uint8_t key1[16] = {
+  final[10][0],final[10][1],final[10][2],final[10][3],
+  final[10][4],final[10][5],final[10][6],final[10][7],
+  final[10][8],final[10][9],final[10][10],final[10][11],
+  final[10][12],final[10][13],final[10][14],final[10][15],
+};
+
+
+OUTPUT from encryption:
+[ayan@wificampus-068187 BOTH]$ ./ByteSubSR
+0 1 2 4 8 10 20 40 80 1b 36
+
+
+
+
+
+
+
+
+
+
+ROUND FROM MIXCOLUMNS1
+5f 57 f7 1d
+72 f5 be b9
+64 bc 3b f9
+15 92 29 1a
+
+
+ROUND1
+5f 72 64 15 57 f5 bc 92 f7 be 3b 29 1d b9 f9 1a
+
+START NEXT ROUND2
+89 d8 10 e8 85 5a ce 68 2d 18 43 d8 cb 12 8f e4
+
+ROUND FROM MIXCOLUMNS2
+ff 31 64 77
+87 d8 51 3a
+96 6a 51 d0
+84 51 fa 9
+
+
+ROUND2
+ff 87 96 84 31 d8 6a 51 64 51 51 fa 77 3a d0 9
+
+START NEXT ROUND3
+49 15 59 8f 55 e5 d7 a0 da ca 94 fa 1f a 63 f7
+
+ROUND FROM MIXCOLUMNS3
+4c f7 2c 53
+9c 71 3f 4d
+1e f0 86 f2
+66 76 8e 56
+
+
+ROUND3
+4c 9c 1e 66 f7 71 f0 76 2c 3f 86 8e 53 4d f2 56
+
+START NEXT ROUND4
+fa 63 6a 28 25 b3 39 c9 40 66 8a 31 57 24 4d 17
+
+ROUND FROM MIXCOLUMNS4
+63 fc 97 75
+85 53 be 47
+b7 8d 47 d6
+9f f9 8e 91
+
+
+ROUND4
+63 85 b7 9f fc 53 8d f9 97 be 47 8e 75 47 d6 91
+
+START NEXT ROUND5
+24 72 40 23 69 66 b3 fa 6e d2 75 32 88 42 5b 6c
+
+ROUND FROM MIXCOLUMNS5
+f4 32 75 1d
+bc e5 f1 d0
+d4 54 d6 3b
+54 d0 c5 3c
+
+
+ROUND5
+f4 bc d4 54 32 e5 54 d0 75 f1 d6 c5 1d d0 3b 3c
+
+START NEXT ROUND6
+c8 16 77 bc 9b 7a c9 3b 25 2 79 92 b0 26 19 96
+
+ROUND FROM MIXCOLUMNS6
+98 0 6b 8e
+16 f8 2c 5a
+ee 7f 4 d0
+74 55 9c 36
+
+
+ROUND6
+98 16 ee 74 0 f8 7f 55 6b 2c 4 9c 8e 5a d0 36
+
+START NEXT ROUND7
+c6 2f e1 9 f7 5e ed c3 cc 79 39 5d 84 f9 cf 5d
+
+ROUND FROM MIXCOLUMNS7
+c5 9a f0 98
+7e 9b 5f c6
+1c d2 4b 34
+15 86 e0 39
+
+
+ROUND7
+c5 7e 1c 15 9a 9b d2 86 f0 5f 4b e0 98 c6 34 39
+
+START NEXT ROUND8
+d1 87 6c f 79 c4 30 a b4 55 94 ad d6 6f f4 1f
+
+ROUND FROM MIXCOLUMNS8
+ba a1 d5 5f
+a0 f9 51 41
+3d b5 2c 4d
+e7 6e ba 23
+
+
+ROUND8
+ba a0 3d e7 a1 f9 b5 6e d5 51 2c ba 5f 41 4d 23
+
+START NEXT ROUND9
+fd e3 ba d2 5 e5 d0 d7 35 47 96 4e f1 fe 37 f1
+
+ROUND FROM MIXCOLUMNS9
+e9 2 1b 35
+f7 30 f2 3c
+4e 20 cc 21
+ec f6 f2 c7
+
+
+ROUND9
+e9 f7 4e ec 2 30 20 f6 1b f2 cc f2 35 3c 21 c7
+
+START NEXT ROUND10
+bd 6e 7c 3d f2 b5 77 9e b 61 21 6e 8b 10 b6 89
+
+LAST ROUND10
+69 c4 e0 d8 6a 7b 4 30 d8 cd b7 80 70 b4 c5 5a
